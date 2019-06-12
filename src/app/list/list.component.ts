@@ -1,0 +1,46 @@
+import { Component, OnInit } from '@angular/core';
+import { Post, BlogService } from '../blog.service';
+import { TokenService } from '../token.service';
+import { Router, ActivatedRoute, ParamMap } from '@angular/router';
+
+@Component({
+    selector: 'app-list',
+    templateUrl: './list.component.html',
+    styleUrls: ['./list.component.css']
+})
+export class ListComponent implements OnInit {
+
+    private posts: Post[];
+    private username: string;
+    private readonly base_url = "http://localhost:3000/";
+    
+    constructor(
+	private blogService: BlogService,
+	private tokenService: TokenService,
+	private router: Router
+    ) {
+	if (!document.cookie) {
+	    let redir = window.location.href;
+	    console.log("redirect url", redir);
+	    window.location.replace(`${this.base_url}login?redirect=${redir}`);
+	} else {
+	    this.username = this.tokenService.get_usr(document.cookie);
+	}
+    }
+
+    ngOnInit() {
+	console.log("ngOnInit");
+	this.getPosts();
+    }
+
+    getPosts(): void {
+	this.posts = this.blogService.getPosts(this.username);
+    }
+
+    newPost(): void {
+	let new_post = this.blogService.newPost(this.username);
+	let new_post_id = new_post.postid;
+	this.router.navigate([`/edit/${new_post_id}`]);
+    }
+    
+}

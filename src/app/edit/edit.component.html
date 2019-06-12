@@ -1,0 +1,18 @@
+<div *ngIf="post">
+  <div id="editComp">
+    <div>
+      <label class="title"> Title: <br>
+        <input type="text" [(ngModel)]="post.title" placeholder="title">
+      </label>
+      <br><br>
+      <label class="title">Body: <br>
+        <textarea [(ngModel)]="post.body" name="body" placeholder=""></textarea>
+      </label>
+      <br><br>
+      Last Modified: {{post.modified | date: 'medium'}}
+    </div>
+    <button (click)="delete()">delete</button>
+    <button (click)="save()">save</button>
+    <button (click)="preview()">preview</button>
+  </div>
+</div>

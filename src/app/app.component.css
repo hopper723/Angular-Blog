@@ -1,0 +1,15 @@
+. list {
+    width: 30%;
+  }
+  
+  . edit {
+    width: 70%;
+  }
+  
+  . preview {
+    width: 70%;
+  }
+  
+  # listPane {
+    boreder: 10px;
+  }

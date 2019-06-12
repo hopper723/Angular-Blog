@@ -1,0 +1,48 @@
+* {
+    font-family: "Lucida Grande", Helvetica, Arial, sans-serif;
+}
+
+#editComp {
+    padding: 10px;
+    width: 500px;
+    float: left;
+    margin-left: 350px;
+    margin-right: 10px;
+    position: absolute;
+}
+
+.title {
+    font-size: 1.2em;
+    font-weight: 3px;
+    color: #607D8B;
+}
+  
+button {
+    margin-top: 20px;
+    margin-left: 5px;
+    border-radius: 4px;
+    padding: 5px 10px;
+    cursor: pointer; cursor: hand;
+    background-color: #eee;
+    border: none;
+}
+  
+input[type="text"] {
+    width: 300px;
+    height: 20px;
+}
+
+input[placeholder="title"] {
+    font-style: italic;
+    color: #888;
+}
+  
+textarea {
+    height: 200px;
+    width: 400px;
+}
+  
+textarea[name="body"] {
+    font-style: italic;
+    color: #888;
+}

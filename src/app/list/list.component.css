@@ -1,0 +1,98 @@
+* {
+    font-family: "Lucida Grande", Helvetica, Arial, sans-serif;
+}
+
+#listComp {
+    width: 300px;
+    float: left;
+    margin-left: 14px;
+    position: absolute;
+}
+
+/* POSTS  */
+#top {
+    margin-left: 20px;
+}
+.posts {
+    margin: 0 0 0 0;
+    list-style-type: none;
+    padding: 4px 4px 4px 4px;
+}
+
+#post_title {
+    text-align: center;
+    font-size: 1.3em;
+    margin-top: 2px;
+    margin-bottom: 2px;
+}
+
+.posts li {
+    cursor: pointer;
+    width: 95%;
+    border-radius: 40px;
+    margin: 2%;
+    padding: 4px 4px 0px 4px;
+    background-color: #EEE;
+    position: relative;
+}
+
+.posts li:hover {
+    color: #607D8D;
+    background-color: #DDD;
+    left: .2em;
+}
+
+.posts a {
+    color: #888;
+    text-decoration: none;
+    width: 250px;
+    display: block;
+    position: relative;
+}
+
+.posts a:hover {
+    color:#607D8B;
+}
+
+.posts .badge {
+    display: inline-block;
+    font-size: small;
+    color: white;
+    height: 1.8em;
+    min-width: 16px;
+    text-align: right;
+    margin-right: .8em;
+    border-radius: 4px 0px 0px 4px;
+    line-height: 1em;
+    left: -1px;
+    top: -2px;
+    border-radius: 400px;
+    padding: .8em 0.7em 0 0.7em;
+    background-color: #607D8B;
+    position: relative;
+}
+
+/* BUTTONS  */
+button {
+    cursor: pointer;
+    cursor: hand;
+    border: none;
+    border-radius: 4px;
+    padding: 4px 4px 4px 4px;
+    margin-left: 22px;
+    margin-top: 12px;
+    margin-bottom: 0px;
+    background-color: #eee;
+}
+
+button.delete {
+    position: relative;
+    left: 194px;
+    top: -30px;
+    color: white;
+    background-color: gray !important;
+}
+
+button:hover {
+    background-color: #cfd8dc;
+}

@@ -1,0 +1,32 @@
+* {
+    font-family: "Lucida Grande", Helvetica, Arial, sans-serif;
+}
+
+#previewComp {
+    width: 500px;
+    float: left;
+    border: 0px solid;
+    margin-left: 350px;
+    margin-right: 10px;
+    padding: 10px;
+    position: absolute;
+}
+
+#title {
+    font-style: bold;
+    font-size: 1.8em;
+    margin-bottom: 2px;
+    padding: none;
+}
+
+#body {
+    font-size: 1em;
+}
+  
+button {
+    background-color: #eee;
+    border: none;
+    padding: 5px 10px;
+    border-radius: 4px;
+    cursor: pointer; cursor: hand;
+}
